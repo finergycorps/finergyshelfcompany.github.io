@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Horizon Catalyst Ventures	</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Product</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .product-card {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        h2, p {
+            margin: 0;
+        }
+
+        .company-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .what-you-get {
+            margin-top: 15px;
+        }
+
+        .viewer-count {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .chart {
+            background-color: #e0e0e0;
+            height: 20px;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar {
+            height: 100%;
+            width: 50%; /* Initial value */
+            transition: width 0.5s ease-in-out; /* Add smooth transition effect */
+        }
+
+        .count-text {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #555;
+        }
+
+        .purchase-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+  <nav class="navbar">
+			<div class="logo">
+				<a href="#">FINERGY CORPS SHELF CORPARATION </a>
+			</div>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</nav>
+    </div>
+<body>
+
+<div class="product-card">
+    <img data-visualcompletion="media-vc-image" alt="May be an image of blimp, skyscraper and text that says 'finergy corp SHELF COMPANY IOLV'" class="x1bwycvy x193iq5w x4fas0m x19kjcj4" referrerpolicy="origin-when-cross-origin" src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/394881730_7180621741974944_5479899627802254057_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=tmowb4Q66YUAX85ozzO&amp;_nc_ht=scontent-ord5-2.xx&amp;oh=00_AfAysx44wz__GSbVcil5fyZRaC4NMZeytFzh1VJEGT29mw&amp;oe=6539051B"
+         alt="Product Image">
+    <div class="product-details">
+        <h2>Horizon Catalyst Ventures	</h2>
+        <p>Price: $3,000</p>
+        <div class="company-info">
+            <p>Company: Your Company Name</p>
+            <p>Location: Your Company Location</p>
+            <p>Date of Formation: Your Formation Date</p>
+        </div>
+        <div class="what-you-get">
+            <h3>What You Get:</h3>
+            <ul>
+                <li>EIN Document: Yes</li>
+                <li>Articles of Incorporation: Yes</li>
+                <li>Tradeline Document: Yes</li>
+                <li>Business Bank Account: Yes</li>
+                <li>Dun & Bradstreet Registered Agent: Yes</li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+        <div class="viewer-count">
+            <h3>Live Viewers</h3>
+            <div class="chart">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <p class="count-text" id="viewerCount">1,000 viewers</p>
+        </div>
+    </div>
+<center>  <button>PURCHASE</button><center>
+    </div>
+  
+
+
+<script>
+    function getRandomViewerCount() {
+        return Math.floor(Math.random() * 20000) + 1;
+    }
+
+    function updateViewerCount() {
+        const viewerCountElement = document.getElementById('viewerCount');
+        const progressBar = document.querySelector('.bar');
+
+        const newViewerCount = getRandomViewerCount();
+        viewerCountElement.textContent = `${newViewerCount} viewers`;
+
+        const percentage = (newViewerCount / 20000) * 100;
+        progressBar.style.width = `${percentage}%`;
+    }
+
+    function animateViewerCount() {
+        setInterval(() => {
+            updateViewerCount();
+        }, 3000);
+    }
+
+    animateViewerCount();
+</script>
+  <div
+    data-pp-message
+    data-pp-style-layout="text"
+    data-pp-style-logo-type="inline"
+    data-pp-style-text-color="black"
+    data-pp-amount="$20,000.00">
+
+  </div>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
